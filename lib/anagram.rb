@@ -4,8 +4,9 @@ class Anagram
     def initialize(word)
         @word = word
     end
-    
-    def match
+
+    def match(array)
+        array.split
 
     end
 
