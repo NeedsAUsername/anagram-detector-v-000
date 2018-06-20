@@ -6,7 +6,8 @@ class Anagram
     end
 
     def match(array)
-        array.split
+        array.uniq.each do |word|
+            self.word 
 
     end
 
