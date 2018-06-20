@@ -6,12 +6,6 @@ class Anagram
     end
 
     def match(array)
-        words = []
-        array.uniq.each do |word|
-            if word.split(//).sort == @word.split(//).sort
-                words << word
-            end
-        end
-        words
-    end
+        array.detect{|word| word.split(//).sort == @word.split(//).sort}
+    end 
 end
