@@ -6,8 +6,11 @@ class Anagram
     end
 
     def match(array)
+        words = nil
         array.uniq.each do |word|
-            self.word 
+            if word.split(//).sort == @word.split(//).sort
+                words << word
+            end
 
     end
 
